@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<title>Unit Converter - Area</title>
+
+<head>
+  <link rel="icon" href="../../image/calculator_icon.png">
+  <link rel="stylesheet" href="../../style/index.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Font awesomq-->
+
+
+
+
+</head>
+
+<body>
+  <h1 class="text-center text-white bg-dark header-text text-uppercase"> <a href="#" class="text-light">Conversion
+      Calculator</a> <i class="fa fa-calculator"></i></h1>
+  <h2 class="text-center">Metric System</h2>
+
+  <h3 class="text-center">Enter value in any input field to determine values in other units</h3>
+  </p>
+
+  <div class="container jumbotron">
+    <div class="container-fluid">
+
+      <div>
+      <form>
+        <input type="button" value="Go Back!". onclick="history.back()">
+      </form>
+    </div>
+
+      <div class="row">
+        <div class="col">
+          <label>Square Meter</label><br>
+          <input id="square-meter" class="form-control text-center mb-2  mr-sm-2" type="number"
+            placeholder="Square Meter" onchange="fromSquareMeterToOther(this.value)"
+            oninput="fromSquareMeterToOther(this.value)">
+        </div>
+        <div class="col ">
+          <label>Square kilometer</label><br>
+          <input id="square-kilometer" class="form-control text-center  mb-2 mr-sm-2" type="number"
+            placeholder="Square Kilometer" onchange="fromSquareKilometerToOthers(this.value)"
+            oninput="fromSquareKilometerToOthers(this.value)"><br>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+          <label>Square Centimeter</label><br>
+          <input id="square-centimeter" class="form-control text-center  mb-2 mr-sm-2" type="number"
+            placeholder="Square Centimeter" onchange="fromSquareCentimeterToOther(this.value)"
+            oninput="fromSquareCentimeterToOther(this.value)">
+        </div>
+        <div class="col">
+          <label>Square Milimeter </label><br>
+          <input id="square-milimeter" class="form-control text-center  mb-2 mr-sm-2" type="number"
+            placeholder="Square Milimeter" onchange="fromSquareMilimeterToOther(this.value)"
+            oninput="fromSquareMilimeterToOther(this.value)">
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col">
+          <label>Square Micrometer</label><br>
+          <input id="square-micrometer" class="form-control text-center  mb-2 mr-sm-2" type="number"
+            placeholder="Square Micrometer" onchange="fromSquareMicrometerToOthers(this.value)"
+            oninput="fromSquareMicrometerToOthers(this.value)">
+        </div>
+        <div class="col">
+          <label>Hectare</label><br>
+          <input id="hectare" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Hectare"
+            onchange="fromHectarToOthers(this.value)" oninput="fromHectarToOthers(this.value)">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label>Square Mile</label><br>
+          <input id="square-mile" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Mile"
+            onchange="fromSquareMileToOthers(this.value)" oninput="fromSquareMileToOthers(this.value)">
+        </div>
+
+        <div class="col">
+          <label>Square Yard</label><br>
+          <input id="square-yard" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Yard"
+            onchange="fromSquareYardToOthers(this.value)" oninput="fromSquareYardToOthers(this.value)">
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+          <label>Square Foot</label><br>
+          <input id="square-foot" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Foot"
+            onchange="fromSquareFootToOthers(this.value)" oninput="fromSquareFootToOthers(this.value)">
+        </div>
+
+        <div class="col">
+          <label>Square Inch</label><br>
+          <input id="square-inch" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Inch"
+            onchange="fromSquareInchToOthers(this.value)" oninput="fromSquareInchToOthers(this.value)">
+        </div>
+
+
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+          <label>Acre</label><br>
+          <input id="acre" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Acre"
+            onchange="fromAcreToOthers(this.value)" oninput="fromAcreToOthers(this.value)">
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <script src="../../js/physics/area-conversion.js"></script>
+
+  </div>
+  </div>
+
+
+</body>
+
+</html>

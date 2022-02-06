@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>Unit Converter - Number</title>
+<head>
+  <link rel="icon" href="../../image/calculator_icon.png">
+  <link rel="stylesheet" href="../../style/index.css">
+  <!-- bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--Font awesomq-->
+
+
+
+</head>
+<body>
+    <h1 class="text-center text-white bg-dark header-text text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
+    <h2 class="text-center">Metric System</h2>
+    
+    <p class="about-para">
+      <h3 class="text-center">Enter value in any input field to determine values in other units</h3>
+    </p>
+  <div class="container jumbotron">
+  <div class="container-fluid">
+    
+    <div>
+      <form>
+        <input type="button" value="Go Back!". onclick="history.back()">
+      </form>
+    </div>
+
+<div class="row">
+  <div class="col">
+  <label>Binary</label><br>
+  <input id="binary" class="form-control text-center mb-2  mr-sm-2" type="text" placeholder="Binary"
+  onchange="fromBinaryToOther(this.value)" oninput="fromBinaryToOther(this.value)"></div>
+        <div class="col ">
+<label>Octal</label><br>
+<input id= "octal" class="form-control text-center  mb-2 mr-sm-2" type="text" placeholder="Octal"
+onchange="fromOctalToOthers(this.value)" oninput = "fromOctalToOthers(this.value)"><br>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="col">
+  <label>Decimal</label><br>
+<input id= "decimal" class="form-control text-center  mb-2 mr-sm-2" type="text" placeholder="Decimal"
+onchange="fromDecimalToOther(this.value)" oninput = "fromDecimalToOther(this.value)">
+</div>
+<div class="col">
+<label>Hexadecimal</label><br>
+<input id= "hexadecimal" class="form-control text-center  mb-2 mr-sm-2" type="text" placeholder="Hexadecimal"
+onchange="fromHexadecimalToOther(this.value)" oninput = "fromHexadecimalToOther(this.value)">
+</div>
+</div>
+
+
+</div>
+<script src = "../../js/digital/number-conversion.js"></script>
+
+</div>
+</div>
+
+</body>
+</html>
