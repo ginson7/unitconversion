@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Unit Converter - Weight</title>
+
+<head>
+  <link rel="icon" href="image/calculator_icon.png">
+  <link rel="stylesheet" href="style/index.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <h2 class="text-center text-white bg-dark text-uppercase header-text"> <a href="#" class="text-light">Conversion
+      Calculator</a> <i class="fa fa-calculator"></i></h2>
+  <h3 class="text-center">Metric System</h3>
+  <div class="container jumbotron">
+    <div class="container-fluid">
+
+
+      <!--menu digital-->
+      <div class="row">
+        <div class="dropdown-container text-center">
+          <div class="dropdown">
+            <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Digital
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+              <a class="dropdown-item" href="html/digital/number-conversion.html">Number</a>
+              <a class="dropdown-item" href="html/digital/digital-storage.html">Digital Storage</a>
+            </div>
+          </div>
+        </div>
+        <!--menu-physics-->
+        <div class="dropdown-container text-center">
+          <div class="dropdown">
+            <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Physics
+            </a>
+            <!--Physics list item-->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="html/physics/length.html">Length</a>
+              <a class="dropdown-item" href="html/physics/temperature.html">Temperature</a>
+              <a class="dropdown-item" href="html/physics/speed.html">Speed</a>
+              <a class="dropdown-item" href="html/physics/area.html">Area</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script src="js/physics/weight-conversion.js"></script>
+
+  </div>
+  </div>
+</body>
+
+</html>
